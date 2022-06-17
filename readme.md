@@ -29,7 +29,7 @@ Write in the root of the directory:
 ```
 mvn clean test
 ```
-
+If this is not working, you must review the configuration of JDK and Maven in your machine.
 
 ## Junit 5.x configuration
 https://www.baeldung.com/junit-5
@@ -67,10 +67,9 @@ public class DummyTest {
     }
 }
 ```
-
+We go to run menu and create a configuration "maven" which do "clean test".
+After this, we do the same but with junit choosing "all in package" to discover tests
 y le damos a Run y metemos una configuración de tipo maven que haga "clean test"
-
-Después haría lo mismo con junit eligiendo "all in package" para descubir los tests
 
 ## Review warnings
 
@@ -141,3 +140,21 @@ Fizz
 14
 FizzBuzz
 ```
+
+# During the Kata...
+## Parametrized Tests could be interesting
+You can read this article: https://www.baeldung.com/parameterized-tests-junit-5
+
+Basically you need to include in the POM:
+``` xml
+<!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params -->
+<dependency>
+    <groupId>org.junit.jupiter</groupId>
+    <artifactId>junit-jupiter-params</artifactId>
+    <version>5.9.0-M1</version>
+    <scope>test</scope>
+</dependency>
+
+```
+Review always the version in:
+https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-params
