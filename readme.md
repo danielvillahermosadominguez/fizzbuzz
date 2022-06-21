@@ -30,6 +30,10 @@ Write in the root of the directory:
 mvn clean test
 ```
 If this is not working, you must review the configuration of JDK and Maven in your machine.
+### Using the maven wrapper or a custom version of Maven
+
+You could change it in your IDE. You have more information in:
+https://www.jetbrains.com/help/idea/maven-support.html#maven2_install
 
 ## Junit 5.x configuration
 https://www.baeldung.com/junit-5
